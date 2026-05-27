@@ -31,7 +31,7 @@ export default function AppHeader() {
 
   return (
     <header className="hidden md:block">
-      <div className="mx-auto flex max-w-[1180px] items-center gap-6 px-6 pt-12">
+      <div className="mx-auto flex max-w-[1100px] items-center gap-6 px-8 pt-8">
         <div className="flex items-center gap-3">
           <div className="size-12 overflow-hidden rounded-full bg-zinc-200 ring-2 ring-white">
             <Image

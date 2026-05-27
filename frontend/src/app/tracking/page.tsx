@@ -97,8 +97,8 @@ function SymptomIcon({ symptom }: { symptom: ApiSymptom }) {
 
 function TrackingSkeleton() {
   return (
-    <main className="mx-auto max-w-[1180px] px-3 pb-8 pt-5 md:px-6 md:pt-9">
-      <div className="grid gap-8 md:grid-cols-[455px_1fr]">
+    <main className="mx-auto max-w-[1100px] px-3 pb-8 pt-5 md:px-8 md:pt-6">
+      <div className="grid gap-8 md:grid-cols-[400px_1fr]">
         <div className="space-y-5">
           <Skeleton className="h-[360px] rounded-xl" />
           <Skeleton className="h-[270px] rounded-xl" />
@@ -233,7 +233,7 @@ export default function TrackingPage() {
   if (isLoadingSymptoms) return <TrackingSkeleton />;
 
   return (
-    <main className="mx-auto max-w-[1180px] h-full overflow-y-auto px-0 pb-8 pt-0 md:px-6 md:pt-9 custom-scrollbar">
+    <main className="mx-auto max-w-[1100px] h-full overflow-y-auto px-0 pb-8 pt-0 md:px-8 md:pt-6 custom-scrollbar">
       <div className="sticky top-0 z-20 flex items-center gap-3 border-b border-slate-100 bg-white px-5 py-5 md:hidden">
         <button type="button" onClick={() => router.back()} aria-label="Back" className="text-slate-400">
           <ChevronLeft size={26} />
@@ -241,7 +241,7 @@ export default function TrackingPage() {
         <h1 className="text-base font-black text-slate-950">Log Menstrual Symptoms</h1>
       </div>
 
-      <div className="grid gap-5 md:grid-cols-[455px_1fr] md:gap-12">
+      <div className="grid gap-5 md:grid-cols-[400px_1fr] md:gap-12">
         <aside className="space-y-5 px-3 pt-5 md:px-0 md:pt-0">
           <section className="rounded-none bg-white px-6 py-8 text-center md:flex md:min-h-[360px] md:flex-col md:items-center md:justify-center md:rounded-xl md:border md:border-slate-200">
             <Image

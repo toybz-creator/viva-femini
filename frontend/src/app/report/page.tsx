@@ -51,7 +51,7 @@ function getChartLabel(history: CycleHistoryItem) {
 
 function ReportSkeleton() {
   return (
-    <main className="mx-auto max-w-[1180px] h-full overflow-y-auto px-4 pb-8 pt-5 md:px-6 md:pt-9 custom-scrollbar">
+    <main className="mx-auto max-w-[1100px] h-full overflow-y-auto px-4 pb-8 pt-5 md:px-8 md:pt-6 custom-scrollbar">
       <div className="rounded-[22px] bg-[#E7E7E8] p-4">
         <div className="grid gap-3 md:grid-cols-2">
           <Skeleton className="h-[190px] rounded-[18px]" />
@@ -173,7 +173,7 @@ export default function ReportPage() {
   const circumference = 2 * Math.PI * radius;
 
   return (
-    <main className="mx-auto max-w-[1180px] h-full overflow-y-auto px-0 pb-8 pt-0 md:px-6 md:pt-9 custom-scrollbar print:max-w-none print:p-0">
+    <main className="mx-auto max-w-[1100px] h-full overflow-y-auto px-0 pb-8 pt-0 md:px-8 md:pt-6 custom-scrollbar print:max-w-none print:p-0">
       <div className="sticky top-0 z-20 flex items-center gap-3 border-b border-slate-100 bg-white px-5 py-5 md:hidden print:hidden">
         <button type="button" onClick={() => router.back()} aria-label="Back" className="text-slate-400">
           <ChevronLeft size={26} />

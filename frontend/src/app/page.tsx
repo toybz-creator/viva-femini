@@ -93,8 +93,8 @@ function getSymptomName(input: string | Symptom) {
 
 function DashboardSkeleton() {
   return (
-    <main className="mx-auto max-w-[1180px] px-4 pb-8 pt-5 md:h-[calc(100vh-140px)] md:px-6 md:pt-10 lg:overflow-hidden">
-      <div className="grid h-full gap-5 lg:grid-cols-[455px_1fr]">
+    <main className="mx-auto max-w-[1100px] px-4 pb-8 pt-5 md:h-[calc(100vh-140px)] md:px-8 md:pt-6 lg:overflow-hidden">
+      <div className="grid h-full gap-5 lg:grid-cols-[400px_1fr]">
         <div className="space-y-4 lg:overflow-hidden">
           <Skeleton className="h-[405px] rounded-[22px]" />
           <Skeleton className="h-24 rounded-[22px]" />
@@ -215,7 +215,7 @@ export default function Home() {
   const recommendedArticles = getDashboardArticles(summary?.recommendedArticles);
 
   return (
-    <main className="mx-auto max-w-[1180px] bg-white px-3 pb-8 pt-0 md:h-[calc(100vh-140px)] md:px-6 md:pt-9 lg:overflow-hidden">
+    <main className="mx-auto max-w-[1100px] bg-white px-3 pb-8 pt-0 md:h-[calc(100vh-140px)] md:px-8 md:pt-6 lg:overflow-hidden">
       <div className="flex items-center justify-between bg-white px-2 py-4 md:hidden">
         <div className="flex items-center gap-3">
           <Image
@@ -242,7 +242,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="grid gap-5 lg:h-full lg:grid-cols-[455px_1fr]">
+      <div className="grid gap-5 lg:h-full lg:grid-cols-[400px_1fr]">
         <section className="space-y-4 lg:h-full lg:overflow-y-auto lg:pr-2 custom-scrollbar">
           <div className="overflow-hidden rounded-[22px] bg-gradient-to-b from-[#FA2B79] to-[#FDA6CA] text-white shadow-sm">
             <div className="px-5 pb-8 pt-6 text-center">
