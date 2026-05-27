@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "build:shared": "npm run build -w shared",
-    "build:frontend": "npm run build -w frontend",
+    "build:frontend": "npm run build:shared && npm run build -w frontend",
     "build:backend": "npm run build:shared && npm run build -w backend",
     "start:backend": "npm run start:prod -w backend",
     "dev:frontend": "npm run dev -w frontend",
