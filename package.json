@@ -13,5 +13,8 @@
     "start:backend": "npm run start:prod -w backend",
     "dev:frontend": "npm run dev -w frontend",
     "dev:backend": "npm run start:dev -w backend"
+  },
+  "devDependencies": {
+    "next": "^16.2.6"
   }
 }
