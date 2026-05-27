@@ -2,8 +2,8 @@ import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { AnalyticsController } from './analytics.controller';
 import { AnalyticsService } from './analytics.service';
-import { Log, LogSchema } from '../schemas/log.schema';
-import { User, UserSchema } from '../schemas/user.schema';
+import { Log, LogSchema } from '../tracking/schemas/log.schema';
+import { User, UserSchema } from '../users/schemas/user.schema';
 
 @Module({
   imports: [

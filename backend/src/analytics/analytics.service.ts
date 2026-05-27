@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model, Types } from 'mongoose';
-import { Log } from '../schemas/log.schema';
-import { User } from '../schemas/user.schema';
+import { Log } from '../tracking/schemas/log.schema';
+import { User } from '../users/schemas/user.schema';
 import { CycleHistoryItem, AnalyticsData } from '@viva-femini/shared';
 import {
   buildPeriodSegments,

@@ -1,8 +1,8 @@
 import { Injectable, Inject, Logger } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model, Types } from 'mongoose';
-import { Log } from '../schemas/log.schema';
-import { Symptom } from '../schemas/symptom.schema';
+import { Log } from './schemas/log.schema';
+import { Symptom } from './schemas/symptom.schema';
 import { CreateLogDto } from './dto/create-log.dto';
 import Redis from 'ioredis';
 import {

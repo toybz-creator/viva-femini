@@ -1,11 +1,11 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { SeedService } from './seed.service';
-import { Symptom, SymptomSchema } from '../schemas/symptom.schema';
-import { Article, ArticleSchema } from '../schemas/article.schema';
-import { Tip, TipSchema } from '../schemas/tip.schema';
-import { User, UserSchema } from '../schemas/user.schema';
-import { Log, LogSchema } from '../schemas/log.schema';
+import { Symptom, SymptomSchema } from '../tracking/schemas/symptom.schema';
+import { Article, ArticleSchema } from '../dashboard/schemas/article.schema';
+import { Tip, TipSchema } from '../dashboard/schemas/tip.schema';
+import { User, UserSchema } from '../users/schemas/user.schema';
+import { Log, LogSchema } from '../tracking/schemas/log.schema';
 
 @Module({
   imports: [

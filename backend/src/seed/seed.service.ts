@@ -1,11 +1,11 @@
 import { Injectable, OnApplicationBootstrap } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model, Types } from 'mongoose';
-import { Symptom } from '../schemas/symptom.schema';
-import { Article } from '../schemas/article.schema';
-import { Tip } from '../schemas/tip.schema';
-import { User } from '../schemas/user.schema';
-import { Log } from '../schemas/log.schema';
+import { Symptom } from '../tracking/schemas/symptom.schema';
+import { Article } from '../dashboard/schemas/article.schema';
+import { Tip } from '../dashboard/schemas/tip.schema';
+import { User } from '../users/schemas/user.schema';
+import { Log } from '../tracking/schemas/log.schema';
 import { hashTokenToId } from '../common/utils/hash';
 import { ConfigService } from '@nestjs/config';
 

@@ -1,7 +1,7 @@
 import { Controller, Get } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model, Types } from 'mongoose';
-import { User } from '../schemas/user.schema';
+import { User } from './schemas/user.schema';
 import { UserId } from '../common/decorators/user-id.decorator';
 import { ApiBearerAuth, ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { serializeMongoRecord } from '../common/utils/serializers';

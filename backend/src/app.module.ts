@@ -11,12 +11,6 @@ import { AnalyticsModule } from './analytics/analytics.module';
 import { UsersModule } from './users/users.module';
 import { RedisModule } from './redis/redis.module';
 import { AllExceptionsFilter } from './common/filters/all-exceptions.filter';
-import { DebugErrorController } from './debug/debug-error.controller';
-
-const controllers: any[] = [AppController];
-if (process.env.NODE_ENV !== 'production') {
-  controllers.push(DebugErrorController);
-}
 
 @Module({
   imports: [
@@ -41,7 +35,6 @@ if (process.env.NODE_ENV !== 'production') {
     DashboardModule,
     AnalyticsModule,
   ],
-  controllers,
   providers: [
     AppService,
     {

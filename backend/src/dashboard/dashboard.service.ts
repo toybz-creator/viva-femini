@@ -1,10 +1,10 @@
 import { Injectable, Inject, Logger } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model, Types } from 'mongoose';
-import { User } from '../schemas/user.schema';
-import { Log } from '../schemas/log.schema';
-import { Article } from '../schemas/article.schema';
-import { Tip } from '../schemas/tip.schema';
+import { User } from '../users/schemas/user.schema';
+import { Log } from '../tracking/schemas/log.schema';
+import { Article } from './schemas/article.schema';
+import { Tip } from './schemas/tip.schema';
 import Redis from 'ioredis';
 import { serializeMongoRecord } from '../common/utils/serializers';
 import { calculateCycleState } from '../common/utils/cycle-calculations';
