@@ -62,10 +62,20 @@ cd viva-femini
 
 ### 2. Install Dependencies
 
-You need to install dependencies in the root of each project:
+You can install all dependencies from the root using npm workspaces:
 
 ```bash
+# Install all dependencies and link shared package
+npm install
+
 # Build shared package (Required for FE and BE)
+npm run build:shared
+```
+
+Alternatively, you can still install dependencies in each project:
+
+```bash
+# Build shared package
 cd shared && npm install && npm run build
 cd ..
 

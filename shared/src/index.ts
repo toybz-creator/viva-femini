@@ -10,7 +10,7 @@ export interface User {
 export interface Symptom {
   id: string;
   name: string;
-  category: 'physical' | 'emotional' | 'other' | string;
+  category: "physical" | "emotional" | "other" | string;
   icon?: string;
 }
 
@@ -31,7 +31,7 @@ export interface Article {
   id: string;
   title: string;
   content: string;
-  phase: 'menstrual' | 'follicular' | 'ovulatory' | 'luteal' | string;
+  phase: "menstrual" | "follicular" | "ovulatory" | "luteal" | string;
   category?: string;
   imageUrl?: string;
 }
@@ -40,14 +40,14 @@ export interface Tip {
   id: string;
   title: string;
   content: string;
-  phase: 'menstrual' | 'follicular' | 'ovulatory' | 'luteal' | string;
+  phase: "menstrual" | "follicular" | "ovulatory" | "luteal" | string;
   icon?: string;
   hashTag?: string;
 }
 
 export interface DashboardSummary {
   cycleDay: number;
-  phase: 'menstrual' | 'follicular' | 'ovulatory' | 'luteal' | string;
+  phase: "menstrual" | "follicular" | "ovulatory" | "luteal" | string;
   todayLog: Log | null;
   recommendedArticles: Article[];
   dailyTip: Tip | null;
@@ -66,7 +66,6 @@ export interface PredictionsResponse {
   ovulationWindowStartDate: string | Date;
   ovulationWindowEndDate: string | Date;
 }
-
 
 export interface CreateLogRequest {
   date?: string | Date;

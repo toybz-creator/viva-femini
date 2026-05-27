@@ -85,8 +85,6 @@ docs/
 custom-agent-guide/
 scripts/
 AGENTS.md
-/package.json
-/package-lock.json
 
 # Yarn v3
 .pnp.*
