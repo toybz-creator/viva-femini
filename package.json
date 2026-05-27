@@ -15,6 +15,8 @@
     "dev:backend": "npm run start:dev -w backend"
   },
   "devDependencies": {
-    "next": "^16.2.6"
+    "next": "^16.2.6",
+    "tailwindcss": "^4",
+    "@tailwindcss/postcss": "^4"
   }
 }
