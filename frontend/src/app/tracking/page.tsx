@@ -233,7 +233,7 @@ export default function TrackingPage() {
   if (isLoadingSymptoms) return <TrackingSkeleton />;
 
   return (
-    <main className="mx-auto max-w-[1100px] h-full overflow-y-auto px-0 pb-8 pt-0 md:px-8 md:pt-6 custom-scrollbar">
+    <main className="mx-auto max-w-[1100px] px-0 pb-8 pt-0 md:h-full md:overflow-y-auto md:px-8 md:pt-6 custom-scrollbar">
       <div className="sticky top-0 z-20 flex items-center gap-3 border-b border-slate-100 bg-white px-5 py-5 md:hidden">
         <button type="button" onClick={() => router.back()} aria-label="Back" className="text-slate-400">
           <ChevronLeft size={26} />

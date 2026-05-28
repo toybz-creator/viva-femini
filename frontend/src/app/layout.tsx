@@ -30,10 +30,10 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="h-full flex flex-col bg-background overflow-hidden">
+      <body className="min-h-full flex flex-col bg-background md:h-full md:overflow-hidden">
         <Providers>
           <AppHeader />
-          <div className="flex-1 overflow-hidden pb-28 md:pb-0">{children}</div>
+          <div className="flex-1 pb-28 md:overflow-hidden md:pb-0">{children}</div>
           <Navigation />
         </Providers>
       </body>

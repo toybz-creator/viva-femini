@@ -215,7 +215,7 @@ export default function Home() {
   const recommendedArticles = getDashboardArticles(summary?.recommendedArticles);
 
   return (
-    <main className="mx-auto max-w-[1100px] bg-white px-3 pb-8 pt-0 md:h-[calc(100vh-140px)] md:px-8 md:pt-6 lg:overflow-hidden">
+    <main className="mx-auto max-w-[1100px] overflow-x-hidden bg-white px-3 pb-8 pt-0 md:h-[calc(100vh-140px)] md:px-8 md:pt-6">
       <div className="flex items-center justify-between bg-white px-2 py-4 md:hidden">
         <div className="flex items-center gap-3">
           <Image
@@ -243,7 +243,7 @@ export default function Home() {
       </div>
 
       <div className="grid gap-5 lg:h-full lg:grid-cols-[400px_1fr]">
-        <section className="space-y-4 lg:h-full lg:overflow-y-auto lg:pr-2 custom-scrollbar">
+        <section className="min-w-0 space-y-4 lg:h-full lg:overflow-y-auto lg:pr-2 custom-scrollbar">
           <div className="overflow-hidden rounded-[22px] bg-gradient-to-b from-[#FA2B79] to-[#FDA6CA] text-white shadow-sm">
             <div className="px-5 pb-8 pt-6 text-center">
               <p className="text-xs font-medium">Today, {format(today, 'MMMM d')}</p>
@@ -290,7 +290,7 @@ export default function Home() {
               <div className="relative mx-auto mt-4 flex size-20 items-center justify-center rounded-[28px] bg-[#FA2B79] text-4xl font-black text-white shadow-sm">
                 {cycleDay}
               </div>
-              <div className="relative mt-4 flex items-center justify-center gap-2 text-xs">
+              <div className="relative mt-4 flex flex-wrap items-center justify-center gap-2 text-xs">
                 <span className="font-extrabold">Avg. Cycle: {avgCycle} Days</span>
                 <span className="text-slate-400">Currently: {Math.min(100, Math.round((cycleDay / avgCycle) * 100))}% of 100</span>
               </div>
@@ -347,7 +347,7 @@ export default function Home() {
 
             <div className="mt-6">
               <p className="px-2 text-sm font-extrabold text-[#FA2B79]">Quick Action</p>
-              <div className="mt-3 grid grid-cols-3 gap-3">
+              <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-3">
                 {[
                   { label: 'Log symptoms', href: '/tracking', icon: HeartPulse },
                   { label: 'Log period', href: '/tracking', icon: Sparkles },
@@ -358,7 +358,7 @@ export default function Home() {
                     <Link
                       href={item.href}
                       key={item.label}
-                      className="flex items-center justify-center gap-2 rounded-full bg-slate-100 px-3 py-2 text-[11px] font-bold text-slate-800"
+                    className="flex items-center justify-center gap-2 rounded-full bg-slate-100 px-3 py-2 text-[11px] font-bold text-slate-800"
                     >
                       <span className="flex size-7 items-center justify-center rounded-full bg-[#C01B79] text-white">
                         <Icon size={14} />
@@ -372,7 +372,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="space-y-4 lg:h-full lg:overflow-y-auto lg:pr-2 custom-scrollbar">
+        <section className="min-w-0 space-y-4 lg:h-full lg:overflow-y-auto lg:pr-2 custom-scrollbar">
           <div className="rounded-[22px] bg-[#F3F4F6] p-3 md:bg-[#E5E5EA]">
             <div className="rounded-[18px] bg-white px-4 py-7 text-center md:px-6">
               <p className="text-xl font-bold leading-7 text-[#FA2B79]">Cycle Highlight</p>
