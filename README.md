@@ -1,6 +1,8 @@
-# VivaFemini
+# VivaFemini Interview Task Submission
 
-VivaFemini is a comprehensive female wellness application designed to track symptoms, manage health logs, and provide data-driven analytics for cycle predictions and wellness insights.
+This repository is an interview task submission for VivaFemini.
+
+The project is a comprehensive female wellness application designed to track symptoms, manage health logs, and provide data-driven analytics for cycle predictions and wellness insights.
 
 ## Project Structure
 
@@ -10,7 +12,7 @@ VivaFemini is a comprehensive female wellness application designed to track symp
 
 ## System Architecture
 
-VivaFemini follows a decoupled client-server architecture, ensuring scalability and maintainability.
+This submission follows a decoupled client-server architecture, ensuring scalability and maintainability.
 
 ### Frontend (FE)
 - **Framework**: Next.js 14+ with App Router.
@@ -137,5 +139,4 @@ For the best experience, start the services in the following order:
 - **Testing**:
   - Backend: `cd backend && npm test`
   - Shared: `cd shared && npm test`
-
 
